@@ -2,13 +2,13 @@
 
 <article>
   <header>
-	<h1>Efficient Style Transfer and control in End-to-End Speech Synthesis</h1>
+	<h1>Prosody learning from quantized vector in End-to-End Speech Synthesis</h1>
   </header>
 </article>
 
-<p><b>Authors:</b> Yutian Wang, Yuankun Xie </p>
+<p><b>Authors:</b> Yutian Wang1, Yuankun Xie1, Huaichang Du2, Hui Wang3*, Qin Zhang3 </p>
 
-<div><b>Abstract:</b> In recent years, deep learning has shown impressive works in the field of text-to-speech(TTS) and the most representative TTS system is Tacotron. However, the training speed of Tactoron is too slow and the speaker’s speaking style is difficult to generate. In this paper, we describe an efficient TTS system, which can quickly learn the speaking styles from reference audio and converts text into speech in real time. Our system consists of three trained components: (1)Vector Quantised Variational AutoEncoder(VQ-VAE), trained on a style transfer task using an unsupervised method, to learn the latent representation from reference audio. VQ-VAE has discrete latent variables with a new way of training, which can training faster than Variational AutoEncoder(VAE); (2)a sequence-to-sequence synthesis network based on Tacotron that generates a mel spectrogram of text conditioned on latent embedding from VQ-VAE ;(3)a vocoder named WaveRNN, which can get the final audio from mel spectrogram. 
+<div><b>Abstract:</b> In recent years, deep learning has achieved great success in the field of text-to-speech(TTS) . However, there are still some limitations on the TTS models. First, the amount of the parameters of TTS model is very large which make the model hard to train and cannot be used in real-time scene, second, generating rhythmic speech is still a difficult task. In this paper, we describe a novel TTS architecture which can simulate the speaking prosody from reference audio and control the prosody from the latent quantized vector. Our system consists of three components: (1)Prosody encoder based on Vector Quantized Variational AutoEncoder(VQ-VAE) to learn the latent rep-resentation from reference audio. (2)a se-quence-to-sequence synthesis network based on Tacotron that generates mel spectrogram of input text which is conditioned on the latent code from prosody encoder. (3)a vocoder named WaveRNN, which can get the final audio from mel spectro-gram.  Experiments shown that the quality of generative results is competitive to state of the art and have same rhythmic details of the reference speeches. 
 </div>
 
 
