@@ -124,7 +124,23 @@
     </table>
     </blockquote>
   </p>   
-<h3>1. Non-parallel transfer</h3></a>
+ 8." 莽莽乡野，万水千山，铿锵承诺。          "
+    <blockquote>
+    <table>
+    <tr>
+    <td align=center width=300>reference audio</td><td align=center width=300>Griffin-Lim</td><td align=center width=300>WaveRNN</td><td align=center width=300>GST model</td>    
+    </tr>
+    <tr>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000343/000343.wav" controls></audio></td>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000343/1/output/logs-eval/wav-batch_0_sentence_0-linear.wav" controls></audio></td>
+	<td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000343/1/style transfer.wav" controls></audio></td>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000343/1/GST.wav" controls></audio></td>
+    </tr>
+    </table>
+    </blockquote>
+  </p>     
+  
+<h3>2. Non-parallel transfer</h3></a>
    <p class="sample">
    	<div>1. reference text : " This very morning I had to go a clear six miles and only took three shillings . "</div>
    	<div > generated text: " Though they could not force him to gamble and he was compelled to drink . "</div>	
@@ -191,7 +207,63 @@
     </blockquote>   
 	
 
-    
+<h3>3. Non-punctuation transfer</h3></a>   
+ <p class="sample">
+   	<div>1. reference text : " 只愿苍天相照应留得情谊比锦翠"</div>
+   	<div > generated text: "入则恳恳以尽忠出则谦谦以自悔 "</div>	
+    <blockquote>
+    <table>
+    <tr>
+     <td align=center width=300>reference audio</td><td align=center width=300>Non-parallel transfer</td><td align=center width=300>GST model</td>    
+    </tr>
+    <tr>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000142/000142.wav" controls></audio></td>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000142/__mel-batch_0_sentence_0__1131k_steps_gen_batched_target11000_overlap550.wav" controls></audio></td>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000142/GST.wav" controls></audio></td>
+    </tr>
+    </table>	
+    </blockquote>   
+   	<div>2. reference text : " 十年沧海劈波斩浪"</div>
+   	<div > generated text: "老骥伏枥志在千里 "</div>	
+    <blockquote>
+    <table>
+    <tr>
+     <td align=center width=300>reference audio</td><td align=center width=300>Non-parallel transfer</td><td align=center width=300>GST model</td>    
+    </tr>
+    <tr>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000106/000106.wav" controls></audio></td>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000106/__mel-batch_0_sentence_0__1131k_steps_gen_batched_target11000_overlap550.wav" controls></audio></td>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000106/GST.wav" controls></audio></td>
+    </tr>
+    </table>	
+    </blockquote>   
+  	<div>2. reference text : " 十年沧海劈波斩浪"</div>
+   	<div > generated text: "老骥伏枥志在千里 "</div>	
+    <blockquote>
+    <table>
+    <tr>
+     <td align=center width=300>reference audio</td><td align=center width=300>Non-parallel transfer</td><td align=center width=300>GST model</td>    
+    </tr>
+    <tr>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000343/2/000364.wav" controls></audio></td>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000343/2/__mel-batch_0_sentence_0__1131k_steps_gen_batched_target11000_overlap550.wav" controls></audio></td>
+    <td rowspan=2><audio src="https://raw.githubusercontent.com/xieyuankun/sample/master/000343/2/GST.wav" controls></audio></td>
+    </tr>
+    </table>	
+    </blockquote>   
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 <body>
 <h2>Style control</h2></a>
 <h3>1. pitch high</h3></a>
