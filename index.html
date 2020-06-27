@@ -2,13 +2,30 @@
 
 <article>
   <header>
-	<h1>Prosody learning from quantized vector in End-to-End Speech Synthesis</h1>
+	<h1>Quantized Prosody Learning in Rhythmic Speech Synthesis</h1>
   </header>
 </article>
 
 <p><b>Authors:</b> Yutian Wang1, Yuankun Xie1, Huaichang Du2, Hui Wang3*, Qin Zhang3 </p>
 
-<div><b>Abstract:</b> In recent years, deep learning has achieved great success in the field of text-to-speech(TTS) . However, there are still some limitations on the TTS models. First, the amount of the parameters of TTS model is very large which make the model hard to train and cannot be used in real-time scene, second, generating rhythmic speech is still a difficult task. In this paper, we describe a novel TTS architecture which can simulate the speaking prosody from reference audio and control the prosody from the latent quantized vector. Our system consists of three components: (1)Prosody encoder based on Vector Quantized Variational AutoEncoder(VQ-VAE) to learn the latent rep-resentation from reference audio. (2)a se-quence-to-sequence synthesis network based on Tacotron that generates mel spectrogram of input text which is conditioned on the latent code from prosody encoder. (3)a vocoder named WaveRNN, which can get the final audio from mel spectro-gram.  Experiments shown that the quality of generative results is competitive to state of the art and have same rhythmic details of the reference speeches. 
+<div><b>Abstract:</b> In recent years, text-to-speech (TTS) has made great strides with the application of deep learning. However, one of the   shortcomings of the TTS model is that generating rhythmic
+speech is still very difficult. Furthermore, since prosody is affected
+by multiple speech characteristics, it is a more difficult
+problem to manually control the prosody of generated speech.
+In this paper, we propose a novel TTS architecture which can
+simulate the speaking prosody from reference audio and manually
+control the prosody by modifying the latent quantized vectors.
+Our system consists of three components: (1) Prosody encoder
+based on vector quantization method to learn the discrete
+latent representation from reference audio. (2) A sequence-tosequence
+speech synthesis network based on Tacotron that generates
+Mel spectrum from input text which is conditioned on the
+latent quantized vectors from prosody encoder. (3) A vocoder
+based on a modified WaveRNN model, which can get the final
+raw audio waves from the Mel spectrum. Experiments show
+that the speaking style of generated results is very close to the
+reference audios and the style can be controlled by manually
+changing the value of the latent quantized vectors. 
 </div>
 
 
