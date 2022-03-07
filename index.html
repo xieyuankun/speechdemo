@@ -2,29 +2,26 @@
 
 <article>
   <header>
-	<h1>Quantized Prosody Learning in Rhythmic Speech Synthesis</h1>
+	<h2>UNSUPERVISED QUANTIZED PROSODY REPRESENTATION FOR CONTROLLABLE
+SPEECH SYNTHESIS</h2>
   </header>
 </article>
 
 
-<div><b>Abstract:</b> In recent years, text-to-speech (TTS) has made great strides with the application of deep learning. However, one of the   shortcomings of the TTS model is that generating rhythmic
-speech is still very difficult. Furthermore, since prosody is affected
-by multiple speech characteristics, it is a more difficult
-problem to manually control the prosody of generated speech.
-In this paper, we propose a novel TTS architecture which can
-simulate the speaking prosody from reference audio and manually
-control the prosody by modifying the latent quantized vectors.
-Our system consists of three components: (1) Prosody encoder
-based on vector quantization method to learn the discrete
-latent representation from reference audio. (2) A sequence-tosequence
-speech synthesis network based on Tacotron that generates
-Mel spectrum from input text which is conditioned on the
-latent quantized vectors from prosody encoder. (3) A vocoder
-based on a modified WaveRNN model, which can get the final
-raw audio waves from the Mel spectrum. Experiments show
-that the speaking style of generated results is very close to the
-reference audios and the style can be controlled by manually
-changing the value of the latent quantized vectors. 
+<div><b>Abstract:</b> In this paper, we propose a novel prosody disentangle method
+for prosodic Text-to-Speech (TTS) model, which introduces
+the vector quantization (VQ) method to the auxiliary prosody
+encoder to obtain the decomposed prosody representations in
+an unsupervised manner. Rely on its advantages, the speaking
+styles, such as pitch, speaking velocity, local pitch variance,
+etc., are decomposed automatically into the latent quantize
+vectors. We also investigate the internal mechanism of VQ
+disentangle process by means of a latent variables counter and
+find that higher value dimensions usually represent prosody
+information. Experiments show that our model can control
+the speaking styles of synthesis results by directly manipulating
+the latent variables. The objective and subjective evaluations
+illustrated that our model outperforms the popular models.
 </div>
 
 
